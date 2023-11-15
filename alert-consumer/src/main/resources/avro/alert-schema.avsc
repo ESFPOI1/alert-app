@@ -1,0 +1,34 @@
+{
+ "name": "Alert",
+    "type": "record",
+    "namespace": "com.example.alertproducer.avro",
+    "fields":
+    [
+        {
+            "name": "description",
+            "type": "string"
+        },
+        {
+            "name": "AlertColor",
+            "type":
+            {
+                "name": "AlertColor",
+                "symbols":
+                [
+                    "YELLOW",
+                    "ORANGE",
+                    "RED"
+                ],
+                "type": "enum"
+            }
+        },
+        {
+            "name": "createdOn",
+            "type":
+            {
+                "logicalType": "timestamp-millis",
+                "type": "long"
+            }
+        }
+    ]
+}
