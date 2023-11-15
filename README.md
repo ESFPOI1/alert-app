@@ -19,13 +19,13 @@ docker compose up -d
 In a terminal and inside the alert-producer root folder, run the command below:
 
 ```cmd
-./mvnw clean spring-boot:run
+mvn clean spring-boot:run
 ```
 
 In another terminal and inside the alert-consumer root folder, run the following command:
 
 ```cmd
-./mvnw clean spring-boot:run
+mvn clean spring-boot:run
 ```
 
 ## Emitting an Alert
